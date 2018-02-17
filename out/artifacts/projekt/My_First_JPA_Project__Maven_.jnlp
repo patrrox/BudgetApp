@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="My_First_JPA_Project__Maven_.jnlp">
+  <information>
+    <title>BudgetApp</title>
+    <vendor>info.ostaszewski</vendor>
+    <description>projekt</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="My_First_JPA_Project__Maven_.jar" size="42308" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="info.ostaszewski.Main"  name="projekt" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="419.0" prefWidth="600.0" styleClass="background" stylesheets="@../Themes/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.ostaszewski.fxmlControllers.StatsGeneralController">
+   <children>
+      <Label layoutX="218.0" layoutY="18.0" text="General Stats" />
+      <BarChart layoutX="46.0" layoutY="52.0" prefHeight="353.0" prefWidth="509.0">
+        <xAxis>
+          <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

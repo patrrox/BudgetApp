@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="projekt">
+    <output-path>$PROJECT_DIR$/out/artifacts/projekt</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="info.ostaszewski.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="exe" />
+        <option name="title" value="BudgetApp" />
+        <option name="vendor" value="info.ostaszewski" />
+        <option name="version" value="1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="My_First_JPA_Project__Maven_.jar">
+        <element id="module-output" name="My First JPA Project (Maven)" />
+      </element>
+    </root>
+  </artifact>
+</component>
