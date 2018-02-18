@@ -124,6 +124,20 @@ public class Month  {
 
         return (x);
     }
+
+    public Double getRestOfBudget()
+    {
+
+        double sum = 0;
+        for (Expense e : expenses) {
+            sum += e.getPrice();
+        }
+        double dateToExport = getBudget() - sum;
+
+        return dateToExport;
+    }
+
+
     public void setBudgetFormated(double budget){
         String q =String.format("%.2f",budget);
         q=q+" zł";

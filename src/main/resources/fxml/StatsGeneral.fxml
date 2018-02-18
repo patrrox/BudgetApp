@@ -9,12 +9,12 @@
 <AnchorPane prefHeight="419.0" prefWidth="600.0" styleClass="background" stylesheets="@../Themes/DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="info.ostaszewski.fxmlControllers.StatsGeneralController">
    <children>
       <Label layoutX="218.0" layoutY="18.0" text="General Stats" />
-      <BarChart layoutX="46.0" layoutY="52.0" prefHeight="353.0" prefWidth="509.0">
+      <BarChart fx:id="barChart" layoutX="50.0" layoutY="39.0" legendVisible="false" prefHeight="366.0" prefWidth="452.0">
         <xAxis>
-          <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
         </xAxis>
         <yAxis>
-          <NumberAxis fx:id="yAxis" side="LEFT" />
+          <NumberAxis side="LEFT" />
         </yAxis>
       </BarChart>
    </children>

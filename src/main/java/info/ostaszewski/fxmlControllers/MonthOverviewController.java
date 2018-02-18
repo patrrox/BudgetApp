@@ -71,6 +71,7 @@ public class MonthOverviewController {
 
     @FXML
     private void initialize() {
+        System.out.println("INITIALIZE");
         yearColumn.setCellValueFactory(cellData -> cellData.getValue().getYearProperty().asObject());
         nameColumn.setCellValueFactory(cellData -> cellData.getValue().getNameProperty());
         budgetColumn.setCellValueFactory(cellData -> cellData.getValue().getBudgetFormated());
@@ -78,6 +79,7 @@ public class MonthOverviewController {
         //listen for selection changes and show
         monthsTable.getSelectionModel().selectedItemProperty().addListener((
                 (observable, oldValue, newValue) -> showMonthDetails(newValue)));
+        System.out.println("KONIEC INITIALIZE");
 
     }
 
@@ -204,12 +206,13 @@ public class MonthOverviewController {
 
 
     public void setMain(Main main) {
+        System.out.println("SET MAIN");
         this.main = main;
         //add observable list to data to the table
         monthsTable.setItems(main.getMonthObservableList());
         monthsTable.getSelectionModel().selectLast();
         dao = main.getDao();
-
+        System.out.println("END SET MAIN");
 
 
     }
@@ -280,7 +283,7 @@ public class MonthOverviewController {
     }
 
 
-    public void restOfYourBudgetCalculator(Month a) {
+    private void restOfYourBudgetCalculator(Month a) {
         ObservableList<Expense> expensesListAll = a.getExpenseObservableList();
         double sum = 0;
         for (Expense e : expensesListAll) {
@@ -291,6 +294,21 @@ public class MonthOverviewController {
         String x = convertToFormate(dateToExport);
         restOfYourBudgetLabel.setText(x);
     }
+
+    public String setRestOfYourBudgetCalculator(Month a)
+    {
+        ObservableList<Expense> expensesListAll = a.getExpenseObservableList();
+        double sum = 0;
+        for (Expense e : expensesListAll) {
+            sum += e.getPrice();
+        }
+        double dateToExport = a.getBudget() - sum;
+
+        return convertToFormate(dateToExport);
+
+    }
+
+
 
     private String convertToFormate(double price) {
         String q = String.format("%.2f", price);

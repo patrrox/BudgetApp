@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="My_First_JPA_Project__Maven_.jar" size="42498" download="eager" />
+    <jar href="My_First_JPA_Project__Maven_.jar" size="43897" download="eager" />
     <jar href="antlr-2.7.7.jar" size="445288" download="eager" />
     <jar href="dom4j-1.6.1.jar" size="313898" download="eager" />
     <jar href="hibernate-commons-annotations-4.0.5.Final.jar" size="75324" download="eager" />

@@ -16,6 +16,14 @@
     -fx-text-fill: black;
     -fx-opacity: 0.6;
 }
+.BarChart {
+    -fx-padding: 11px;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+     -fx-fill:transparent;
+     -fx-stroke: transparent;
+
+}
 
 .label-bright {
     -fx-font-size: 11pt;

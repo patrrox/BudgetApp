@@ -205,10 +205,26 @@ public class Main extends Application {
             dialogStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
+/*
+            StatsGeneralController controller = new StatsGeneralController(this);// = loader.getController();
+            System.out.println("tutaj");
+            controller.setMonthObservableList(monthObservableList);
+            loader.getController();
+*/
 
             StatsGeneralController controller = loader.getController();
+            controller.setMain(this);
+            controller.start();
+
+
+            //controller.setMain(this);
             controller.setDialogStage(dialogStage);
-            controller.setMonthObservableList(monthObservableList);
+           // controller.showRestOfBudgetBarChart();
+
+
+
+          //  controller.setMain(this);
+
             dialogStage.showAndWait();
 
 
