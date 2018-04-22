@@ -12,3 +12,9 @@ BudgetApp aplikacja do zarządzania budżetem napisana na systemy desktopowe, dz
 *poznałem narządzie do budowania projektów (Maven)
 
 ```
+
+
+Zdjęcia prezentujące działanie oplikacji
+![bugetapp_1](https://user-images.githubusercontent.com/28192437/39098091-c749ff86-4665-11e8-884b-4afa75375562.PNG)
+
+
